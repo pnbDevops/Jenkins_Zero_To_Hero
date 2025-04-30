@@ -8,6 +8,9 @@ pipeline {
       steps {
         sh 'mvn --version'
       }
+      steps {
+        sh 'java --version'
+      }
     }
     stage('Front-end') {
       agent {
